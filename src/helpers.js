@@ -1,31 +1,16 @@
-import React from 'react';
-
-const Choice = ({items}) => {
+function choice(items) {
     let randIdx = Math.floor(Math.random() * items.length);
-    return (
-        <div>
-            <p>{items[randIdx]}</p>
-        </div>
-    )
+    return items[randIdx];
 }
 
-const Remove = ({items, item}) => {
-    let itemIdx;
+function remove(items, item) {
     for(let i = 0; i <= items.length; i++) {
         if (items[i] === item) {
-            itemIdx = i;
-        } else {
-            itemIdx = -1;
+            return [...items.slice(0, i), ...items.slice(i + 1)]
         }
     }
-
-    return (
-        <div>
-            <p>{itemIdx === -1 ? 'undefined' : items[itemIdx]}</p>
-        </div>
-    )
 }
 
 
 
-export { Choice, Remove };
+export { choice, remove };

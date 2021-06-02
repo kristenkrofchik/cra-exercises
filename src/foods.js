@@ -1,8 +1,6 @@
-import React from 'react';
-
-const Fruits = [
+let foods = [
     "🍇", "🍈", "🍉", "🍊", "🍋", "🍌", "🍍",
     "🍎", "🍏", "🍐", "🍒", "🍓", "🥝", "🍅", "🥑",
 ];
 
-export { Fruits };
+export { foods };
