@@ -28,4 +28,4 @@ const Remove = ({items, item}) => {
 
 
 
-export { Choice, remove }
+export { Choice, Remove };
